@@ -1,0 +1,6 @@
+let mailOptions = {
+          from : 'noreplyimpala@gmail.com',
+          to : account_email,
+          subject : 'Welcome to the Shoppe Plaza!',
+          html : '<img src="https://media.discordapp.net/attachments/772064957793435678/781655590136578068/unknown.png" style="border-radius: 8px;"/>'  
+        }

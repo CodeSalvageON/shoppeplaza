@@ -1,0 +1,3 @@
+await accountRef.set({
+          log : doc.data().log + account_name + "/*email" + account_email + "/*pwd" + encryptor.encrypt(account_pwd) + "*(=/]|;"
+        });

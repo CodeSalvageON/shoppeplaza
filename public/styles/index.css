@@ -1,0 +1,7 @@
+body {
+  transition: background-color ease-in-out 2s;
+}
+
+button {
+  background-color: whitesmoke;
+}

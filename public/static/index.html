@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shoppe Plaza</title>
+    
+    <!-- Magic Hat styles -->
+    <link href="https://codesalvageon.github.io/magichat/styles/index.css" rel="stylesheet">
+
+    <!-- Icon -->
+    <link href="https://media.discordapp.net/attachments/772064957793435678/781577721737642005/41320-200.png" rel="icon">
+
+    <!-- Local CSS Files -->
+    <link href="/styles/index.css" rel="stylesheet">
+
+    <!-- Effects -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover.css" rel="stylesheet">
+    <link href="https://impala.codesalvageon.repl.co/styles/hover.min.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Texturina&display=swap" rel="stylesheet">
+
+    <!-- Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body class="origami-yoda texturina">
+    <div class="center" id="title-screen">
+      <img src="https://media.discordapp.net/attachments/772064957793435678/781580961816510464/image-removebg-preview.png" class="hover"/>
+
+      <br/>
+      <br/>
+
+      <button id="create-account-button" class="button hover boxed rounded paragraph texturina">Create Account</button>
+      <br/>
+      <button id="login-button" class="button hover boxed rounded paragraph texturina">Login</button>
+    </div>
+
+    <div class="center" id="create-account-screen">
+      <button id="create-account-back" class="paragraph button rounded texturina">Back</button>
+      <br/>
+      <h1>Create a Shoppe Plaza Account</h1>
+      <br/>
+      <p class="red paragraph rounded center" id="login-error"></p>
+      <br/>
+      <form id="create-account-form">
+        <h3>Account Name: <input type="text" class="rounded text-input texturina" id="account_creation_name" maxlength="32" required/></h3>
+        <h3>Account Email: <input type="email" class="rounded text-input texturina" id="account_creation_email" required/></h3>
+        <h3>Account Password: <input type="password" class="rounded text-input texturina" id="account_creation_pwd" required/></h3>
+        <br/>
+        <button class="paragraph button rounded texturina">Create Account</button>
+      </form>
+    </div>
+
+    <div class="center" id="login-screen">
+      <button id="login-back" class="paragraph button rounded texturina">Back</button>
+      <br/>
+      <h1>Login to a Shoppe Plaza Account</h1>
+      <br/>
+      <form id="login-form">
+        <p class="limegreen paragraph rounded center" id="email-sent"></p>
+        <h3>Account Name: <input type="text" class="rounded text-input texturina" id="account_login_name" maxlength="32" required/></h3>
+        <h3>Account Password: <input type="password" class="rounded text-input texturina" id="account_login_pwd" maxlength="32" required/></h3>
+        <br/>
+        <button class="paragraph button rounded texturina">Login</button>
+        <br/>
+        <h3 class="false-link" id="forgot-password">I forgot my password</h3>
+      </form>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/scripts/index.js"></script>
+  </body>
+</html>
